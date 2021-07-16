@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#2d9cdb" />
+    <link rel="icon" href="devchallenges.png" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Poppins:wght@300;400;500;700&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Poppins:wght@300;400;500;700&display=swap"
+    /></noscript>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Edie HomePage</title>
+  </head>
+  <body>
+    <nav
+      class="
+        navbar
+        d-flex
+        flex-nowrap
+        align-items-center
+        justify-content-between
+      "
+    >
+      <a href="#" class="nav-logo white-text">Edie</a>
+      <div class="grid-menu d-grid bg-dark">
+        <button class="btn-close white-text">
+          <span class="material-icons"> close </span>
+        </button>
+        <ul class="nav-menu d-flex align-items-center">
+          <li class="nav-item">
+            <a href="#home" class="nav-link white-text">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#services" class="nav-link white-text">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="#work" class="nav-link white-text">Our Works</a>
+          </li>
+          <li class="nav-item">
+            <a href="#clients" class="nav-link white-text">Clients</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link white-text">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+      <button class="btn-toggle white-text">
+        <span class="material-icons"> menu </span>
+      </button>
+    </nav>
+
+    <header class="header m-rl2">
+      <span class="blue-text fw-500">Unhappy with your website?</span>
+      <h1>We create beautiful and fast web services</h1>
+      <picture>
+        <source
+          media="(max-width: 767px)"
+          srcset="assets/heroImage-mobile.webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="assets/heroImage-desktop.webp"
+        />
+        <img src="assets/heroImage-desktop.webp" alt="Team Works" />
+      </picture>
+    </header>
+
+    <section class="story m-rl2 d-flex flex-column justify-content-center">
+      <h2 class="fw-500">Story, emotion and purpose</h2>
+      <p>
+        We help transform your ideas into real world applications that will
+        outperform your toughest competition and help you achieve your strategic
+        goals in short period of time.
+      </p>
+
+      <div class="input__email d-flex">
+        <label for="email">
+          Want us to contact you?
+          <div class="input__email-box d-flex align-items-center">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="Email"
+            />
+            <a href="#">Join</a>
+          </div>
+        </label>
+      </div>
+    </section>
+
+    <section id="services" class="services m-rl1">
+      <h2>We offer high demand services</h2>
+      <div class="group__cards d-flex justify-content-center">
+        <div class="card d-flex flex-column align-items-start">
+          <span class="material-icons services__icon super-center bg-blue">
+            edit
+          </span>
+          <h3>UI/UX Design</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+            metus ac nulla consequat aliquet id quis turpis.
+          </p>
+          <a href="#" class="btn">Get Started</a>
+        </div>
+        <div class="card d-flex flex-column align-items-start">
+          <span class="material-icons services__icon super-center bg-green">
+            code
+          </span>
+          <h3>UI/UX Design</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+            metus ac nulla consequat aliquet id quis turpis.
+          </p>
+          <a href="#" class="btn">Get Started</a>
+        </div>
+        <div class="card d-flex flex-column align-items-start">
+          <span class="material-icons services__icon super-center bg-red">
+            storage
+          </span>
+          <h3>UI/UX Design</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+            metus ac nulla consequat aliquet id quis turpis.
+          </p>
+          <a href="#" class="btn">Get Started</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="design m-rl1">
+      <h2>Good design means good business</h2>
+      <div class="group__designs d-grid">
+        <div class="card__design div1">
+          <picture>
+            <source media="(max-width: 767px)" srcset="assets/smarthome.webp" />
+            <source
+              media="(min-width: 768px)"
+              srcset="assets/smarthome-desktop.webp"
+            />
+            <img src="assets/smarthome.webp" alt="Team Works" />
+          </picture>
+          <small>Full Stack Application</small>
+          <p class="fw-500">Smart home dashboard</p>
+        </div>
+        <div class="card__design div2">
+          <picture>
+            <source media="(max-width: 767px)" srcset="assets/onboard.webp" />
+            <source
+              media="(min-width: 768px)"
+              srcset="assets/onboard-desktop.webp"
+            />
+            <img src="assets/onboard.webp" alt="Team Works" />
+          </picture>
+          <small>Full Stack Application</small>
+          <p class="fw-500">Smart home dashboard</p>
+        </div>
+        <div class="card__design div3">
+          <picture>
+            <!--TODO: Add hero image mobile-->
+            <source media="(max-width: 767px)" srcset="assets/booking.webp" />
+            <source
+              media="(min-width: 768px)"
+              srcset="assets/booking-desktop.webp"
+            />
+            <img src="assets/booking.webp" alt="Team Works" />
+          </picture>
+          <small>Full Stack Application</small>
+          <p class="fw-500">Smart home dashboard</p>
+        </div>
+        <div class="card__design div4">
+          <picture>
+            <!--TODO: Add hero image mobile-->
+            <source
+              media="(max-width: 767px)"
+              srcset="assets/juice-product.webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="assets/juice-product-desktop.webp"
+            />
+            <img src="assets/juice-product.webp" alt="Team Works" />
+          </picture>
+          <small>Full Stack Application</small>
+          <p class="fw-500">Smart home dashboard</p>
+        </div>
+        <a href="#" class="btn__flat div5 d-flex align-items-center fw-500"
+          >see more <span class="material-icons"> arrow_right_alt </span></a
+        >
+      </div>
+    </section>
+
+    <section class="team d-flex m-rl1">
+      <div class="team__description">
+        <small class="fw-500">Meet the team</small>
+        <h2>We are chilled and a laidback team</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="team__photos d-grid align-items-center">
+        <img src="assets/person3.webp" class="img-person3" alt="Person3" />
+        <img src="assets/person1.webp" class="img-person1" alt="Person3" />
+        <img src="assets/person2.webp" class="img-person2" alt="Person3" />
+      </div>
+    </section>
+
+    <section id="clients" class="testimonials m-rl1">
+      <h2 class="fw-500">
+        “Fast and outstanding resutls. Edie understands their customer’s needs.
+        They have a young and talented team.”
+      </h2>
+      <div class="client d-flex align-items-center">
+        <img src="assets/person4.webp" alt="Avatar" />
+        <div class="client__info d-flex flex-column">
+          <p class="client__name fw-500">Carlos Tran</p>
+          <p class="client__job-title fw-500">The Decorate Gatsby</p>
+        </div>
+      </div>
+    </section>
+
+    <footer id="contact" class="footer">
+      <div class="footer__social d-flex">
+        <nav>
+          <ul class="d-flex">
+            <li class="fw-400">Home</li>
+            <li class="fw-400">Services</li>
+            <li class="fw-400">Our Works</li>
+            <li class="fw-400">Clients</li>
+            <li class="fw-400">Contact</li>
+          </ul>
+        </nav>
+        <div class="logos">
+          <span>Edie</span>
+          <div class="social-media">
+            <img src="assets/instagram.svg" alt="Instagram Icon" />
+            <img src="assets/linkedin.svg" alt="Instagram Icon" />
+            <img src="assets/twitter.svg" alt="Instagram Icon" />
+          </div>
+        </div>
+        <div class="input__email">
+          <label for="email-footer">
+            Want us to contact you?
+            <div class="input__email-box d-flex align-items-center large">
+              <input
+                type="email"
+                name="email"
+                id="email-footer"
+                required
+                placeholder="Email"
+              />
+              <a href="#">Join</a>
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="author">
+        created by
+        <a
+          href="https://devchallenges.io/portfolio/alexbaezd"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Alex Báez</a
+        >
+        - devChallenges.io
+      </div>
+    </footer>
+    <script src="js/menu.js"></script>
+  </body>
+</html>
