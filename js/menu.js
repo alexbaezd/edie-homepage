@@ -3,6 +3,25 @@ const close = document.querySelector(".btn-close");
 
 const grid = document.querySelector(".grid-menu");
 const navLink = document.querySelectorAll(".nav-link");
+const nav = document.querySelector("#nav");
+let navTop = nav.offsetTop;
+
+function fixedNav() {
+  if (window.scrollY >= navTop) {
+    nav.classList.add("sticky");
+  } else {
+    nav.classList.remove("sticky");
+  }
+}
+toggle.addEventListener("click", () => {
+  grid.classList.toggle("active");
+});
+
+close.addEventListener("click", () => {
+  grid.classList.toggle("active");
+});
+
+window.addEventListener("scroll", fixedNav);
 
 function isMobile() {
   if (
@@ -15,14 +34,6 @@ function isMobile() {
 
   return false;
 }
-
-toggle.addEventListener("click", () => {
-  grid.classList.toggle("active");
-});
-
-close.addEventListener("click", () => {
-  grid.classList.toggle("active");
-});
 
 if (isMobile()) {
   navLink.forEach((element) =>
